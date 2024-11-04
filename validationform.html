@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validation.css">
+    <title>Form Validation Project</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form id="myForm" onsubmit="validateForm(event)">
+            <h2 style="background-color: turquoise; padding: 10px;">CREATE ACCOUNT</h2><br/><br/>
+<label for="fullName">Full Name:</label><br/>
+<input type="text" id="fullName" name="fullName" style="font-size: larger" onchange="validateName()">
+<br/><br/>
+<label for="email">Email ID:</label><br/>
+<input type="email" id="email" name="email" style="font-size: larger" onchange="validateEmail()">
+<br/><br/>
+<label for="phoneNumber">Phone Number:</label><br/>
+<input type="text" id="phoneNumber" name="phoneNumber" style="font-size: larger" onchange="validatePhoneNumber()">
+<br/><br/>
+<label for="password">Password:</label><br/>
+<input type="password" id="password" name="password" style="font-size: larger"onchange="validatePassword()">
+<br/><br/>
+<label for="confirmPassword">Confirm Password:</label><br/>
+<input type="password" id="confirmPassword" name="confirmPassword" style="font-size: larger" onchange="validatePassword()">
+<br/><br/>
+            <button type="submit" style="font-size: medium; box-shadow: inset; background-color: turquoise; padding: 5px;" >Submit</button>
+        </form> 
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>
